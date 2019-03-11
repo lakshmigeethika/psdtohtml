@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+    <title>Your site's title should be here</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Your site's description should be here">
+    <meta name="keywords" content="Your site's keywords should be here">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+
+</head>
+<body>
+    <div class="template">
+        <section class="header">
+            <div class="row">
+                    <div class="logo col-md-2 col-sm-3 col-xs-6 col-12">
+                        <div class="col-3 flex-center brand-holder">
+                            <img class="img-responsive" src="assets/images/logo.png" alt="">
+                            <p class="text">Company Name</p>
+                        </div>
+                    </div>
+                <div>
+                    <div class="col-md-2 col-sm-3 col-xs-6 col-12">
+                        <p class="name">Application Name</p>
+                    </div>
+                    <div class="col-md-2 col-sm-3 col-xs-6 col-md-offset-6 col-12">
+                        <button class="launch-button">
+                            LAUNCH GTW
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main col">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-xs-12">
+                            <div class="col-5">
+                                <p class="text-4">Exception Has Occured</p>
+                                <div class="row exception-content">
+                                    <div class="col-md-4 col-xs-12">
+                                        <p>
+                                            <span>Error Id: 23422</span>
+                                            <br>
+                                            <span>User Email: john@companyname.com</span>
+                                            <br>
+                                            <span>Display Name: John Mahapatra </span>
+                                            <br>
+                                            <span>Context Path: /wtr</span>
+                                            <br>
+                                            <span>Query String:</span>
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-12">
+                                        <p>
+                                            Browser: Chrome/71.0.3578.98
+                                            <br>
+                                            Request URL: http://localhost:8085/trt/exceptionTest
+                                            <br>
+                                            User ID: 40132142
+                                            <br>
+                                            Error&nbsp;&nbsp;&nbsp;&nbsp;ArithmeticException: / by zero
+                                            <br>
+                                            Remote Address&nbsp;&nbsp;&nbsp;&nbsp;0:0:0:0:0:0:0:1
+                                        </p>
+                                    </div>
+                                </div>
+                                <button class="error-button">
+                                    VIEW ERROR
+                                </button>
+                                <hr>
+                                <p class="trace">Exception Stack Trace :</p>
+                                <p>[2019-02-14 14:13:57,053][ERROR]BaseService.getOracleProcedureOutput: Error getting records
+                                    <br>
+                                    java.sql.SQLException: ORA-04063: package body "PKG_ACCOUNT_UTIL" has errors
+                                    <br>
+                                    ORA-06508: PL/SQL: could not find program unit being called: "PKG_ACCOUNT_UTIL"
+                                    <br>
+                                    ORA-06512: at line 1
+                                </p>
+                                    <br>
+                                <ul class="exception-list row">
+                                    <li class="col-12">at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:494)</li>
+
+                                    <li>at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:446)</li>
+
+                                    <li>at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1054)</li>
+
+                                    <li>at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:623)</li>
+
+                                    <li>at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:252)</li>
+
+                                    <li>at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:612)</li>
+
+                                    <li>at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:223)</li>
+
+                                    <li>at oracle.jdbc.driver.T4CCallableStatement.doOall8(T4CCallableStatement.java:56)</li>
+
+                                    <li>at oracle.jdbc.driver.T4CCallableStatement.executeForRows(T4CCallableStatement.java:907)</li>
+
+                                    <li>at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1119)</li>
+
+                                    <li>at oracle.jdbc.driver.OracleStatement.doScrollExecuteCommon(OracleStatement.java:4634)</li>
+
+                                    <li>at oracle.jdbc.driver.OraclePreparedStatement.doScrollPstmtExecuteUpdate(OraclePreparedStatement.java:10203)</li>
+
+                                    <li>at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3775)</li>
+
+                                    <li>at oracle.jdbc.driver.T4CCallableStatement.executeInternal(T4CCallableStatement.java:1300)</li>
+
+
+                                </ul>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </section><!-- main -->
+        <section class="tsd">
+                            <div class="col-2">
+                                <p><strong class="text-danger">TSD &nbsp;</strong>( Application Name )</p>
+                                <p class="tsd-text">CONFIDENTIALITY NOTICE:<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar, quam et posuere luctus, neque massa semper diam, a porttitor sapien lectus quis nunc. Cras fermentum erat quis com<br>modo mollis. Fusce non congue turpis. Sed mattis massa et fringilla posuere</p>
+                            </div>
+        </section>
+        <section class="footer">
+                                <div class="layer-11-holder-wrapper">
+                                    <div class="row">
+                                        <div class="col-md-10 col-xs-12 col-md-offset-1">
+                                            <p class="text-12">© 2019 company network and/or one or more of its member firms, each of which is a separate legal entity.</p>
+                                        </div>
+                                    </div>
+                                </div>
+        </section>
+
+    </div>
+</body>
+</html>
