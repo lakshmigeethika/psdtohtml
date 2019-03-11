@@ -3,7 +3,8 @@ body{
     font-family: Arial;
 }
 .header{
-    background: #fafafa;
+    background: #fafafa
+    linear-gradient(0deg, #b6b5b5, transparent 10%) bottom;
 
 
 }
@@ -24,9 +25,9 @@ body{
     position: relative;
 }
 .logo{
-    background: #ffffff;
+    background: #ffffff  linear-gradient(0deg, #b6b5b5, transparent 10%) bottom;;
     width: 183px;
-    height: 83px;
+    //height: 83px;
     display: flex;
     justify-content: flex-start;
 }
